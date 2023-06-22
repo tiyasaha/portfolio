@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(69, 69, 238);
+    color : white;
+    font-family: 'Poppins', sans-serif ;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(20, 20, 172);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color :rgb(211, 170, 250);
+}
+main hr{
+    border: 0;
+    background: rgb(56, 5, 104);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 110px 30px;
+}
+.firstSection.div{
+   width: 30%;
+}
+.leftSection{
+    font-size: 1.5rem;
+    
+}
+.rightSection img{
+    width: 80%;
+}
+.purple{
+    color: rgb(241, 147, 213);
+}
+#element{
+    color: lightsalmon;
+}
+.secondSection{
+max-width: 80vw;
+margin: auto;
+height: 50vh;
+}
+.secondSection h1{
+font-size: 1.9rem;
+} 
+.secondSection .box{
+background: white;
+width: 75vw;
+height: 2px;
+margin: 56px 0;
+display:flex;
+}
+.secondSection .vertical{
+height: 75px;
+width: 1px;
+background-color: white;
+margin: 0 120px;
+}
+.image-top{
+width: 25px;
+position: relative;
+top: -32px;
+left: -9px; 
+}
+.vertical-text{
+position: relative;
+top: 75px;
+width: 120px;
+}
+.vertical-desc{
+position: relative;
+top: 86px;
+width: 150px;
+color: rgb(20, 20, 20);
+}
+.thirdSection{
+ margin: auto;
+ height: 30vh;
+ max-width: 80vw;
+ }
+
+.thirdSection h1{
+font-size: 1.9rem;
+}
+footer{
+background-color: rgb(54, 54, 247);
+}
+.footer{
+display: flex;
+padding: 23px 120px;
+justify-content: space-evenly;
+}
+.footer ul{
+list-style: none;
+}
+.footer > div{
+ width: 223px;
+}
+footer .footer-rights{
+ text-align: center;
+ color:rgb(148, 148, 143);
+ padding: 12px 0;
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: rgb(69, 69, 238);
+    }
+    .box{
+        flex-direction: column;
+    }
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+   
+    
+    .secondSection .vertical{
+       height: unset;
+    }
+    .secondSection .box{
+        width: 50 vw;
+    }
+    .vertical-text{
+        left: 45px;
+        top: -55px;
+        position :relative;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .thirdSection{
+        display: block;
+        height: 30vh;
+        margin: 50px;
+        max-width: 70vw;
+        
+    }
+    .footer{
+       display:block;
+       position: relative; 
+       height: 30vh;
+       margin: 23px 0;
+       justify-content: space-evenly;
+    }
+    footer .footer-rights{
+        text-align: center;
+        padding: 23px 0;
+       }
+
+}
